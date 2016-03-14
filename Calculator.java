@@ -405,7 +405,7 @@ public class Calculator extends javax.swing.JFrame {
         if(operations == "=")
         {
             String answer;
-            answer = String.format("%.0f",result);
+            answer = String.format("%.3f",result);
             jtxtDisplay.setText(answer);
         }
         
@@ -413,7 +413,7 @@ public class Calculator extends javax.swing.JFrame {
         {
             String answer;
             result = firstnum + secondnum;
-            answer = String.format("%.0f",result);
+            answer = String.format("%.3f",result);
             jtxtDisplay.setText(answer);
         }
         
@@ -421,7 +421,7 @@ public class Calculator extends javax.swing.JFrame {
         {
             String answer;
             result = firstnum - secondnum;
-            answer = String.format("%.0f",result);
+            answer = String.format("%.3f",result);
             jtxtDisplay.setText(answer);
         }
         
@@ -429,7 +429,7 @@ public class Calculator extends javax.swing.JFrame {
         {
             String answer;
             result = firstnum * secondnum;
-            answer = String.format("%.2f",result);
+            answer = String.format("%.3f",result);
             jtxtDisplay.setText(answer);
         }
         
@@ -437,7 +437,7 @@ public class Calculator extends javax.swing.JFrame {
         {
             String answer;
             result = firstnum / secondnum;
-            answer = String.format("%.2f",result);
+            answer = String.format("%.3f",result);
             jtxtDisplay.setText(answer);
         }
         
@@ -445,7 +445,7 @@ public class Calculator extends javax.swing.JFrame {
         {
             String answer;
             result = firstnum % secondnum;
-            answer = String.format("%.0f",result);
+            answer = String.format("%.3f",result);
             jtxtDisplay.setText(answer);
         }
     }//GEN-LAST:event_jBtn18ActionPerformed
